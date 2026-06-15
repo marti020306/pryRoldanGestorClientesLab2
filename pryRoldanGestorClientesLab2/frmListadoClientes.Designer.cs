@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnOrdenar = new System.Windows.Forms.Button();
+            this.btnReporte = new System.Windows.Forms.Button();
             this.lblBlancoPromedio = new System.Windows.Forms.Label();
             this.lblBlancoCantidad = new System.Windows.Forms.Label();
             this.lblBlancoTotal = new System.Windows.Forms.Label();
@@ -40,8 +42,6 @@
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnOrdenar = new System.Windows.Forms.Button();
-            this.btnReporte = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
             this.SuspendLayout();
@@ -58,13 +58,33 @@
             this.groupBox1.Controls.Add(this.lblTotal);
             this.groupBox1.Controls.Add(this.dgvClientes);
             this.groupBox1.Location = new System.Drawing.Point(16, 15);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(801, 641);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Consulta De Datos";
+            // 
+            // btnOrdenar
+            // 
+            this.btnOrdenar.Location = new System.Drawing.Point(44, 525);
+            this.btnOrdenar.Name = "btnOrdenar";
+            this.btnOrdenar.Size = new System.Drawing.Size(88, 33);
+            this.btnOrdenar.TabIndex = 1;
+            this.btnOrdenar.Text = "Ordenar";
+            this.btnOrdenar.UseVisualStyleBackColor = true;
+            this.btnOrdenar.Click += new System.EventHandler(this.btnOrdenar_Click);
+            // 
+            // btnReporte
+            // 
+            this.btnReporte.Location = new System.Drawing.Point(204, 525);
+            this.btnReporte.Name = "btnReporte";
+            this.btnReporte.Size = new System.Drawing.Size(96, 33);
+            this.btnReporte.TabIndex = 2;
+            this.btnReporte.Text = "Reporte";
+            this.btnReporte.UseVisualStyleBackColor = true;
+            this.btnReporte.Click += new System.EventHandler(this.btnReporte_Click);
             // 
             // lblBlancoPromedio
             // 
@@ -133,7 +153,7 @@
             this.Column3,
             this.Column4});
             this.dgvClientes.Location = new System.Drawing.Point(8, 23);
-            this.dgvClientes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvClientes.Margin = new System.Windows.Forms.Padding(4);
             this.dgvClientes.Name = "dgvClientes";
             this.dgvClientes.RowHeadersWidth = 51;
             this.dgvClientes.Size = new System.Drawing.Size(760, 418);
@@ -167,31 +187,13 @@
             this.Column4.Name = "Column4";
             this.Column4.Width = 150;
             // 
-            // btnOrdenar
-            // 
-            this.btnOrdenar.Location = new System.Drawing.Point(44, 525);
-            this.btnOrdenar.Name = "btnOrdenar";
-            this.btnOrdenar.Size = new System.Drawing.Size(88, 33);
-            this.btnOrdenar.TabIndex = 1;
-            this.btnOrdenar.Text = "Ordenar";
-            this.btnOrdenar.UseVisualStyleBackColor = true;
-            // 
-            // btnReporte
-            // 
-            this.btnReporte.Location = new System.Drawing.Point(204, 525);
-            this.btnReporte.Name = "btnReporte";
-            this.btnReporte.Size = new System.Drawing.Size(96, 33);
-            this.btnReporte.TabIndex = 2;
-            this.btnReporte.Text = "Reporte";
-            this.btnReporte.UseVisualStyleBackColor = true;
-            // 
             // frmListadoClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(848, 671);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmListadoClientes";
             this.Text = "Listado De Clientes";
             this.Load += new System.EventHandler(this.frmListadoClientes_Load);

@@ -16,5 +16,14 @@ namespace pryRoldanGestorClientesLab2
         {
             InitializeComponent();
         }
+        clsArchivoCliente x = new clsArchivoCliente();
+        private void frmClientesDeudores_Load(object sender, EventArgs e)
+        {
+            x.ListarDeudores(dgvClientes);
+
+            lblDeudaBlanco.Text = x.TotalDeuda().ToString("0.00");
+            lblCantidadBlanco.Text = x.CantidadClientes().ToString();
+            lblPromedioBlanco.Text = x.PromedioDeuda().ToString("0.00");
+        }
     }
 }

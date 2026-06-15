@@ -50,6 +50,7 @@
             this.btnListar.TabIndex = 0;
             this.btnListar.Text = "Listar";
             this.btnListar.UseVisualStyleBackColor = true;
+            this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
             // 
             // lblCampo
             // 
@@ -74,6 +75,9 @@
             // cmbModo
             // 
             this.cmbModo.FormattingEnabled = true;
+            this.cmbModo.Items.AddRange(new object[] {
+            "Ascendente",
+            "Descedente"});
             this.cmbModo.Location = new System.Drawing.Point(426, 65);
             this.cmbModo.Name = "cmbModo";
             this.cmbModo.Size = new System.Drawing.Size(173, 24);
@@ -82,6 +86,11 @@
             // cmbCampo
             // 
             this.cmbCampo.FormattingEnabled = true;
+            this.cmbCampo.Items.AddRange(new object[] {
+            "Codigo",
+            "Nombre ",
+            "Deuda",
+            "Limite"});
             this.cmbCampo.Location = new System.Drawing.Point(134, 64);
             this.cmbCampo.Name = "cmbCampo";
             this.cmbCampo.Size = new System.Drawing.Size(150, 24);
@@ -95,11 +104,11 @@
             this.Column2,
             this.Column3,
             this.Column4});
-            this.dataGridView1.Location = new System.Drawing.Point(66, 214);
+            this.dataGridView1.Location = new System.Drawing.Point(36, 214);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(598, 268);
+            this.dataGridView1.Size = new System.Drawing.Size(649, 268);
             this.dataGridView1.TabIndex = 5;
             // 
             // Column1
@@ -143,6 +152,7 @@
             this.Controls.Add(this.btnListar);
             this.Name = "frmListadoClientesOrdenado";
             this.Text = "Listado Ordenado";
+            this.Load += new System.EventHandler(this.frmListadoClientesOrdenado_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
