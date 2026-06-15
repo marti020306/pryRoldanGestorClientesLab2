@@ -149,6 +149,7 @@
             this.Controls.Add(this.lblDeudaBlanco);
             this.Controls.Add(this.dgvClientes);
             this.Name = "frmClientesDeudores";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Clientes Deudores";
             this.Load += new System.EventHandler(this.frmClientesDeudores_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).EndInit();

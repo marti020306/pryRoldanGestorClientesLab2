@@ -28,12 +28,153 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.lblFecha1 = new System.Windows.Forms.Label();
+            this.lblTelefono1 = new System.Windows.Forms.Label();
+            this.lbldni1 = new System.Windows.Forms.Label();
+            this.lblEdad1 = new System.Windows.Forms.Label();
+            this.lblNombre1 = new System.Windows.Forms.Label();
+            this.lblNacimiento = new System.Windows.Forms.Label();
+            this.lblTelefono = new System.Windows.Forms.Label();
+            this.lblNombre = new System.Windows.Forms.Label();
+            this.lbltitulo = new System.Windows.Forms.Label();
+            this.lbldni = new System.Windows.Forms.Label();
+            this.lblEdad = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // lblFecha1
+            // 
+            this.lblFecha1.AutoSize = true;
+            this.lblFecha1.Location = new System.Drawing.Point(294, 369);
+            this.lblFecha1.Name = "lblFecha1";
+            this.lblFecha1.Size = new System.Drawing.Size(113, 16);
+            this.lblFecha1.TabIndex = 25;
+            this.lblFecha1.Text = "02 De Marzo 2006";
+            // 
+            // lblTelefono1
+            // 
+            this.lblTelefono1.AutoSize = true;
+            this.lblTelefono1.Location = new System.Drawing.Point(294, 304);
+            this.lblTelefono1.Name = "lblTelefono1";
+            this.lblTelefono1.Size = new System.Drawing.Size(77, 16);
+            this.lblTelefono1.TabIndex = 24;
+            this.lblTelefono1.Text = "3512173508";
+            // 
+            // lbldni1
+            // 
+            this.lbldni1.AutoSize = true;
+            this.lbldni1.Location = new System.Drawing.Point(294, 248);
+            this.lbldni1.Name = "lbldni1";
+            this.lbldni1.Size = new System.Drawing.Size(69, 16);
+            this.lbldni1.TabIndex = 23;
+            this.lbldni1.Text = "46.765.284";
+            // 
+            // lblEdad1
+            // 
+            this.lblEdad1.AutoSize = true;
+            this.lblEdad1.Location = new System.Drawing.Point(294, 186);
+            this.lblEdad1.Name = "lblEdad1";
+            this.lblEdad1.Size = new System.Drawing.Size(55, 16);
+            this.lblEdad1.TabIndex = 22;
+            this.lblEdad1.Text = "20 Años";
+            // 
+            // lblNombre1
+            // 
+            this.lblNombre1.AutoSize = true;
+            this.lblNombre1.Location = new System.Drawing.Point(294, 128);
+            this.lblNombre1.Name = "lblNombre1";
+            this.lblNombre1.Size = new System.Drawing.Size(98, 16);
+            this.lblNombre1.TabIndex = 21;
+            this.lblNombre1.Text = "Martina Roldan";
+            // 
+            // lblNacimiento
+            // 
+            this.lblNacimiento.AutoSize = true;
+            this.lblNacimiento.Location = new System.Drawing.Point(136, 369);
+            this.lblNacimiento.Name = "lblNacimiento";
+            this.lblNacimiento.Size = new System.Drawing.Size(138, 16);
+            this.lblNacimiento.TabIndex = 20;
+            this.lblNacimiento.Text = "Fecha de Nacimiento:";
+            // 
+            // lblTelefono
+            // 
+            this.lblTelefono.AutoSize = true;
+            this.lblTelefono.Location = new System.Drawing.Point(136, 304);
+            this.lblTelefono.Name = "lblTelefono";
+            this.lblTelefono.Size = new System.Drawing.Size(64, 16);
+            this.lblTelefono.TabIndex = 19;
+            this.lblTelefono.Text = "Telefono:";
+            // 
+            // lblNombre
+            // 
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.Location = new System.Drawing.Point(136, 128);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(122, 16);
+            this.lblNombre.TabIndex = 18;
+            this.lblNombre.Text = "Nombre y Apellido:";
+            // 
+            // lbltitulo
+            // 
+            this.lbltitulo.AutoSize = true;
+            this.lbltitulo.Location = new System.Drawing.Point(136, 66);
+            this.lbltitulo.Name = "lbltitulo";
+            this.lbltitulo.Size = new System.Drawing.Size(223, 16);
+            this.lbltitulo.TabIndex = 17;
+            this.lbltitulo.Text = "Datos Personales del Desarrollador";
+            // 
+            // lbldni
+            // 
+            this.lbldni.AutoSize = true;
+            this.lbldni.Location = new System.Drawing.Point(136, 248);
+            this.lbldni.Name = "lbldni";
+            this.lbldni.Size = new System.Drawing.Size(33, 16);
+            this.lbldni.TabIndex = 28;
+            this.lbldni.Text = "DNI:";
+            // 
+            // lblEdad
+            // 
+            this.lblEdad.AutoSize = true;
+            this.lblEdad.Location = new System.Drawing.Point(136, 186);
+            this.lblEdad.Name = "lblEdad";
+            this.lblEdad.Size = new System.Drawing.Size(43, 16);
+            this.lblEdad.TabIndex = 27;
+            this.lblEdad.Text = "Edad:";
+            // 
+            // frmDatosDesarrollador
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(613, 450);
+            this.Controls.Add(this.lbldni);
+            this.Controls.Add(this.lblEdad);
+            this.Controls.Add(this.lblFecha1);
+            this.Controls.Add(this.lblTelefono1);
+            this.Controls.Add(this.lbldni1);
+            this.Controls.Add(this.lblEdad1);
+            this.Controls.Add(this.lblNombre1);
+            this.Controls.Add(this.lblNacimiento);
+            this.Controls.Add(this.lblTelefono);
+            this.Controls.Add(this.lblNombre);
+            this.Controls.Add(this.lbltitulo);
+            this.Name = "frmDatosDesarrollador";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmDatosDesarrollador";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+        private System.Windows.Forms.Label lblFecha1;
+        private System.Windows.Forms.Label lblTelefono1;
+        private System.Windows.Forms.Label lbldni1;
+        private System.Windows.Forms.Label lblEdad1;
+        private System.Windows.Forms.Label lblNombre1;
+        private System.Windows.Forms.Label lblNacimiento;
+        private System.Windows.Forms.Label lblTelefono;
+        private System.Windows.Forms.Label lblNombre;
+        private System.Windows.Forms.Label lbltitulo;
+        private System.Windows.Forms.Label lbldni;
+        private System.Windows.Forms.Label lblEdad;
     }
 }
